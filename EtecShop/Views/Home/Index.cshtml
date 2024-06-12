@@ -34,7 +34,12 @@
                                 '@Url.Action("Produto", "Home", new{ id = produto.Id})'">
                 <div class="card shadow-sm py-4 pb-0">
                     <img class="img-fluid px-4" src="@produto.Foto" alt="@produto.Nome">
-                    
+                    <div class="card-body px-4">
+                        <p class="card-text fw-bold lh-1">@produto.Nome</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <label class="fs-4 fw-bolder">R$ @produto.Preco.ToString("N2")</label>
+                        </div>
+                    </div>
                 </div>
               </div>
             }

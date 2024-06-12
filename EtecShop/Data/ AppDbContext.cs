@@ -144,6 +144,42 @@ public class AppDbContext : IdentityDbContext
                 CategoriaId = 2,
                 Foto = "/img/produtos/4.png"
             },
+            new Produto(){
+                Id = 5,
+                Nome = "Notebook 2 Em 1 Positivo Duo C4128b-3",
+                Descricao = "Notebook 2 Em 1 Positivo Duo C4128b-3 Intel Celeron Dual Core Windows11 Home 11,6' - Cinza Escuro - Inclui Microsoft 365* Notebook 2 em 1Positivo Duo C4128B-3 Intel Celeron Dual Core Windows11 Home 11,6' - Cinza Escuro" ,
+                Preco = 1439.10M,
+                Estoque = 17,
+                CategoriaId = 3,
+                Foto = "/img/produtos/5.png"
+            },
+            new Produto(){
+                Id = 6,
+                Nome = "Conjunto Mesa De Jantar 6 Lugares Milano Amêndoa Com Savana",
+                Descricao = "Conjunto Mesa De Jantar 6 Lugares Milano Amêndoa Com Savana Conjunto com 6 Cadeiras Milano Conjunto com 6 Cadeiras Milano da Poliman Moveis: nossos modelos de cadeiras sao praticos e resistentes",
+                Preco = 521.10M,
+                Estoque = 4,
+                CategoriaId = 7,
+                Foto = "/img/produtos/6.png"
+            },
+            new Produto(){
+                Id = 7,
+                Nome = "Smartphone Motorola Moto G04 4g 128gb Tela 6.6' 4gb Ram Câmera 16mp Selfie 5mp - Grafite",
+                Descricao = "O novo Moto G04 foi projetado para impressionar com cores vibrantes, material superior e detalhes lindos. Beleza em alto nível! Feito com material de padrão elevado, é fino e confortável ao toque.",
+                Preco = 699M,
+                Estoque = 40,
+                CategoriaId = 4,
+                Foto = "/img/produtos/7.png"
+            },
+            new Produto(){
+                Id = 8,
+                Nome = "Cervejeira Consul Mais 82 Litros Frost Free Czd12at Titanium - 220v",
+                Descricao = "Com uma Cervejeira Consul Mais você não precisa mais se preocupar se suas cervejas vão congelar ou se elas não vão ficar geladas na hora que o pessoal chegar. Você pode mudar a configuração das prateleiras da sua Cervejeira",
+                Preco = 2166.03M,
+                Estoque = 4,
+                CategoriaId = 5,
+                Foto = "/img/produtos/8.png"
+            }
         };
         builder.Entity<Produto>().HasData(produtos);
         #endregion
